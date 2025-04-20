@@ -1,0 +1,14 @@
+max_depth: 2
+user_agent: "SmartVulnScanner/1.0"
+timeout: 5
+use_openai: true
+openai_api_key: "SUA_CHAVE_AQUI"
+auth:
+  enabled: true
+  login_url: "https://example.com/login"
+  method: "post"
+  data:
+    username: "admin"
+    password: "admin123"
+  headers:
+    Content-Type: "application/x-www-form-urlencoded"

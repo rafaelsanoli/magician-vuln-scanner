@@ -1,0 +1,63 @@
+#  Çynx Vulnerability Scanner
+
+Este script realiza varreduras de vulnerabilidades em sites, buscando falhas como XSS, SQLi e outros problemas comuns. Ele também tenta realizar ataques controlados (como XSS e SQLi) e gera relatórios em formato JSON e HTML com análise de riscos.
+
+## Requisitos
+
+1. Python 3.x
+2. Bibliotecas:
+   - requests
+   - beautifulsoup4
+   - lxml
+   - pyyaml
+   - jinja2
+   - openai (se necessário)
+   - pyinstaller (para .exe)
+
+Você pode instalar as dependências com o comando:
+```bash
+pip install -r requirements.txt
+``` 
+# Como Usar
+
+Usando como script Python
+
+    Clone o repositório ou baixe os arquivos.
+
+    Instale as dependências.
+
+    Execute o script com:
+
+   ``` bash
+    python main.py
+```
+O script pedirá a URL do alvo, e depois iniciará a varredura.
+
+# Gerar um arquivo .pyz
+
+Para criar um arquivo executável .pyz:
+
+```bash
+python -m zipapp . -o çynx_vuln_scanner.pyz
+```
+
+# Gerar um arquivo .exe
+
+Instale o PyInstaller:
+```bask
+pip install pyinstaller
+```
+
+Execute o comando:
+```bash
+pyinstaller --onefile --distpath . --workpath build --specpath . main.py
+```
+O arquivo .exe será gerado no diretório dist.
+
+# Relatório
+
+Após a varredura, o relatório será salvo em formato JSON e HTML.
+
+# Contribuição
+
+Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novas funcionalidades. Abra um pull request ou crie uma issue.
