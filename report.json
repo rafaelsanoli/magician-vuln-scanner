@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://meetup.chorume.club/",
+    "vulnerabilities": [
+      "Header de seguran\u00e7a ausente: Content-Security-Policy",
+      "Header de seguran\u00e7a ausente: X-Frame-Options",
+      "Header de seguran\u00e7a ausente: X-XSS-Protection"
+    ],
+    "ai_analysis": "Erro ao analisar com IA: No module named 'openai'",
+    "exploit_attempts": []
+  }
+]
